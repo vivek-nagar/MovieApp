@@ -5,6 +5,14 @@ A simple web app made with react that uses OMDb API to display Movie
 
 Made by VIVEk NAGAR
 
+## Live URL
+
+
+```http
+  https://movieappbyvivek.web.app/
+```
+
+
 UI:
 ![Logo](https://www.linkpicture.com/q/Screenshot-599.png)
 
