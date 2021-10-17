@@ -23,3 +23,9 @@ Made by VIVEk NAGAR
 
     
     
+## Features
+
+- Seach movie in database
+- see full details of a movie
+- add/remove movies to favorite
+- Cross platform
