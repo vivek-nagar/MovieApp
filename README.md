@@ -13,7 +13,7 @@ Made by VIVEk NAGAR
 ```
 
 
-UI:
+## Screenshots
 ![Logo](https://www.linkpicture.com/q/Screenshot-599.png)
 
 ![Logo](https://www.linkpicture.com/q/Screenshot-600_1.png)
