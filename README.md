@@ -21,7 +21,15 @@ Made by VIVEk NAGAR
     
 ![Logo](https://www.linkpicture.com/q/Screenshot-603.png)
 
-    
+ ### Libraries used
+`styled-components`
+`axios`
+`react-scripts`
+
+### Libraries used
+`styled-components`
+`axios`
+`react-scripts`
     
 ## Features
 
