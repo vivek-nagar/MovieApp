@@ -14,12 +14,8 @@ Made by VIVEk NAGAR
 
 
 ## Screenshots
-![Logo](https://www.linkpicture.com/q/Screenshot-599.png)
 
-![Logo](https://www.linkpicture.com/q/Screenshot-600_1.png)
-
-    
-![Logo](https://www.linkpicture.com/q/Screenshot-603.png)
+![](https://im3.ezgif.com/tmp/ezgif-3-66245b1ce60a.gif)
 
  ### Libraries used
 `styled-components`
