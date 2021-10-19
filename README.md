@@ -15,7 +15,7 @@ Made by VIVEk NAGAR
 
 ## Screenshots
 
-![](ezgif-3-66245b1ce60a.gif)
+![](ezgif-6-533597c4cf8d.gif)
 
  ### Libraries used
 `styled-components`
