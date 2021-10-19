@@ -17,12 +17,7 @@ const CoverImage = styled.img`
   align-content: center;
   border: solid;
 `;
-const InfoColumn = styled.div`
-  display: flex;
-  flex-direction: column;
 
-  margin: 20px;
-`;
 const MovieName = styled.span`
   font-size: 22px;
   font-weight: bold;
@@ -52,7 +47,6 @@ const MovieInfo = styled.span`
   }
 `;
 const Close = styled.span`
-  background: black;
   height: 8px;
   width: 8px;
   padding: 8px;
@@ -64,6 +58,8 @@ const CloseIcon = styled.img`
   height: 25px;
   width: 25px;
 
+  color: blue;
+  border-radius: 16px;
   /* border: 10px; */
   //border-color: white;
   &:hover {
@@ -86,47 +82,48 @@ const MovieInfoComponent = (props) => {
       {movieInfo ? (
         <>
           <CoverImage src={movieInfo?.Poster} alt={movieInfo?.Title} />
-          <InfoColumn>
-            <MovieName>
-              {movieInfo?.Type}:  <span>{movieInfo?.Title}</span>
-            </MovieName>
-            <MovieInfo>
-              IMDB Rating: <span>{movieInfo?.imdbRating}</span>
-            </MovieInfo>
-            <MovieInfo>
-              Year: <span>{movieInfo?.Year}</span>
-            </MovieInfo>
-            <MovieInfo>
-              Language: <span>{movieInfo?.Language}</span>
-            </MovieInfo>
-            <MovieInfo>
-              Rated: <span>{movieInfo?.Rated}</span>
-            </MovieInfo>
-            <MovieInfo>
-              Released: <span>{movieInfo?.Released}</span>
-            </MovieInfo>
-            <MovieInfo>
-              Runtime: <span>{movieInfo?.Runtime}</span>
-            </MovieInfo>
-            <MovieInfo>
-              Genre: <span>{movieInfo?.Genre}</span>
-            </MovieInfo>
-            <MovieInfo>
-              Director: <span>{movieInfo?.Director}</span>
-            </MovieInfo>
-            <MovieInfo>
-              Actors: <span>{movieInfo?.Actors}</span>
-            </MovieInfo>
-            {/* <MovieInfo>
+          <div className="coInfoColumn">
+            <div className="coMovieName">
+              {movieInfo?.Type}: <span>{movieInfo?.Title}</span>
+            </div>
+            <div clasName="coMovieInfo">
+              <span> IMDB Rating:</span> <span>{movieInfo?.imdbRating}</span>
+            </div>
+            <div clasName="coMovieInfo">
+              <span>Year: </span>
+              <span>{movieInfo?.Year}</span>
+            </div>
+            <div clasName="coMovieInfo">
+              <span>Language:</span> <span>{movieInfo?.Language}</span>
+            </div>
+            <div clasName="coMovieInfo">
+              <span>Rated:</span> <span>{movieInfo?.Rated}</span>
+            </div>
+            <div clasName="coMovieInfo">
+              <span> Released:</span> <span>{movieInfo?.Released}</span>
+            </div>
+            <div clasName="coMovieInfo">
+              <span>Runtime: </span> <span>{movieInfo?.Runtime}</span>
+            </div>
+            <div clasName="coMovieInfo">
+              <span>Genre:</span> <span>{movieInfo?.Genre}</span>
+            </div>
+            <div clasName="coMovieInfo">
+              <span>Director:</span> <span>{movieInfo?.Director}</span>
+            </div>
+            <div clasName="coMovieInfo">
+              <span> Actors: </span> <span>{movieInfo?.Actors}</span>
+            </div>
+            {/* <div clasName='coMovieInfo'>
               Plot: <span>{movieInfo?.PlotShort}</span>
-            </MovieInfo> */}
-          </InfoColumn>
+            </div> */}
+          </div>
           <Close onClick={() => props.onMovieSelect()}>
             <CloseIcon src="./closedec.svg" alt="close" />
           </Close>
         </>
       ) : (
-        "Loading..."
+        <span>"Loading..."</span>
       )}
     </Container>
   );
