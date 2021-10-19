@@ -34,7 +34,8 @@ Generate API key from : http://www.omdbapi.com/apikey.aspx
 
 ## Features
 
-- Seach movie in database
-- see full details of a movie
-- add/remove movies to favorite
-- Cross platform 
+* Seach movie in database
+* see full details of a movie
+* add/remove movies to favorite
+* Light/Dark Mode
+* Cross platform 
