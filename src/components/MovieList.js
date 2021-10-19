@@ -5,18 +5,6 @@ import Snackbar from "@material-ui/core/Snackbar";
 import CloseIcon from "@material-ui/icons/Close";
 import Button from "@material-ui/core/Button";
 
-const MovieContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-  padding: 0px;
-  margin-right: 0px;
-  width: 160px;
-  /* box-shadow: 3px 3px 10px 3px #aaa; */
-  cursor: pointer;
-  background-color: black;
-  /* border: solid;
-  border-color: white; */
-`;
 
 const CoverImage = styled.img`
   object-fit: cover;
@@ -97,7 +85,7 @@ const MovieList = (props) => {
   return (
     <>
       {props.movies.map((movie, index) => (
-        <MovieContainer>
+        <div className="MovieContainer">
           <CoverImage
             src={movie.Poster}
             alt="movie"
@@ -108,7 +96,7 @@ const MovieList = (props) => {
           />
 
           <Close onClick={() => props.handleFavouritesClick(movie)}>
-            <MovieName>{movie.Title}</MovieName>
+            <div className="movieName">{movie.Title}</div>
             <Button
               style={{ outline: "none" }}
               onClick={() => {
@@ -124,15 +112,15 @@ const MovieList = (props) => {
                 vertical: "bottom",
               }}
               open={open}
-              autoHideDuration={5000}
-              message={`Movie added to favirate`}
+              autoHideDuration={1000}
+              message={`Movie ${FavouriteSnackBar} favirate`}
               onClose={handleToClose}
               action={
                 <React.Fragment>
                   <IconButton
                     size="small"
                     aria-label="close"
-                    // color="prim"
+                    color="primary"
                     onClick={handleToClose}
                   >
                     <CloseIcon fontSize="small" />
@@ -141,7 +129,7 @@ const MovieList = (props) => {
               }
             />
           </Close>
-        </MovieContainer>
+        </div>
       ))}
     </>
   );
